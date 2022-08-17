@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FDBC87528AA50F700966A29 /* FlightsRadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBC87428AA50F700966A29 /* FlightsRadarApp.swift */; };
+		0FDBC87728AA50F700966A29 /* FlightsRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBC87628AA50F700966A29 /* FlightsRadarView.swift */; };
+		0FDBC87928AA50F900966A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDBC87828AA50F900966A29 /* Assets.xcassets */; };
+		0FDBC87C28AA50F900966A29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDBC87B28AA50F900966A29 /* Preview Assets.xcassets */; };
+		0FDBC88428AA6F6E00966A29 /* FlightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBC88328AA6F6E00966A29 /* FlightState.swift */; };
+		0FDBC88928AA775D00966A29 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBC88828AA775D00966A29 /* Agent.swift */; };
+		0FDBC89228AAD80000966A29 /* OpenSkyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBC89128AAD80000966A29 /* OpenSkyApi.swift */; };
+		0FDBC89528AAE05700966A29 /* FlightsRadarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBC89428AAE05700966A29 /* FlightsRadarViewModel.swift */; };
+		0FDBC89728AAE38500966A29 /* FlightsRadar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBC89628AAE38500966A29 /* FlightsRadar.swift */; };
+		0FDBC89928ABDF7B00966A29 /* StateVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBC89828ABDF7B00966A29 /* StateVector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FDBC87128AA50F700966A29 /* FlightsRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightsRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDBC87428AA50F700966A29 /* FlightsRadarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsRadarApp.swift; sourceTree = "<group>"; };
+		0FDBC87628AA50F700966A29 /* FlightsRadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsRadarView.swift; sourceTree = "<group>"; };
+		0FDBC87828AA50F900966A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FDBC87B28AA50F900966A29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FDBC88328AA6F6E00966A29 /* FlightState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightState.swift; sourceTree = "<group>"; };
+		0FDBC88828AA775D00966A29 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		0FDBC89128AAD80000966A29 /* OpenSkyApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyApi.swift; sourceTree = "<group>"; };
+		0FDBC89428AAE05700966A29 /* FlightsRadarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsRadarViewModel.swift; sourceTree = "<group>"; };
+		0FDBC89628AAE38500966A29 /* FlightsRadar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsRadar.swift; sourceTree = "<group>"; };
+		0FDBC89828ABDF7B00966A29 /* StateVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FDBC86E28AA50F700966A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FDBC86828AA50F700966A29 = {
+			isa = PBXGroup;
+			children = (
+				0FDBC87328AA50F700966A29 /* FlightsRadar */,
+				0FDBC87228AA50F700966A29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FDBC87228AA50F700966A29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC87128AA50F700966A29 /* FlightsRadar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FDBC87328AA50F700966A29 /* FlightsRadar */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC88D28AAD1FF00966A29 /* Assets */,
+				0FDBC88C28AAD1E800966A29 /* Application */,
+				0FDBC88A28AA77D000966A29 /* Networking */,
+				0FDBC88728AA774100966A29 /* Common */,
+				0FDBC87A28AA50F900966A29 /* Preview Content */,
+			);
+			path = FlightsRadar;
+			sourceTree = "<group>";
+		};
+		0FDBC87A28AA50F900966A29 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC87B28AA50F900966A29 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FDBC88228AA6F4B00966A29 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC88328AA6F6E00966A29 /* FlightState.swift */,
+				0FDBC89828ABDF7B00966A29 /* StateVector.swift */,
+			);
+			name = Entities;
+			path = ../Entities;
+			sourceTree = "<group>";
+		};
+		0FDBC88728AA774100966A29 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC87428AA50F700966A29 /* FlightsRadarApp.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0FDBC88A28AA77D000966A29 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC89028AAD7E200966A29 /* Enums */,
+				0FDBC88228AA6F4B00966A29 /* Entities */,
+				0FDBC88828AA775D00966A29 /* Agent.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0FDBC88C28AAD1E800966A29 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC88F28AAD22800966A29 /* Flows */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0FDBC88D28AAD1FF00966A29 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC87828AA50F900966A29 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0FDBC88F28AAD22800966A29 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC89328AAE03B00966A29 /* FlightsRadar */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		0FDBC89028AAD7E200966A29 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC89128AAD80000966A29 /* OpenSkyApi.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		0FDBC89328AAE03B00966A29 /* FlightsRadar */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBC87628AA50F700966A29 /* FlightsRadarView.swift */,
+				0FDBC89428AAE05700966A29 /* FlightsRadarViewModel.swift */,
+				0FDBC89628AAE38500966A29 /* FlightsRadar.swift */,
+			);
+			path = FlightsRadar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FDBC87028AA50F700966A29 /* FlightsRadar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FDBC87F28AA50F900966A29 /* Build configuration list for PBXNativeTarget "FlightsRadar" */;
+			buildPhases = (
+				0FDBC86D28AA50F700966A29 /* Sources */,
+				0FDBC86E28AA50F700966A29 /* Frameworks */,
+				0FDBC86F28AA50F700966A29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightsRadar;
+			productName = FlightsRadar;
+			productReference = 0FDBC87128AA50F700966A29 /* FlightsRadar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FDBC86928AA50F700966A29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0FDBC87028AA50F700966A29 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 0FDBC86C28AA50F700966A29 /* Build configuration list for PBXProject "FlightsRadar" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FDBC86828AA50F700966A29;
+			productRefGroup = 0FDBC87228AA50F700966A29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FDBC87028AA50F700966A29 /* FlightsRadar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FDBC86F28AA50F700966A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDBC87C28AA50F900966A29 /* Preview Assets.xcassets in Resources */,
+				0FDBC87928AA50F900966A29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FDBC86D28AA50F700966A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDBC89928ABDF7B00966A29 /* StateVector.swift in Sources */,
+				0FDBC89728AAE38500966A29 /* FlightsRadar.swift in Sources */,
+				0FDBC88428AA6F6E00966A29 /* FlightState.swift in Sources */,
+				0FDBC88928AA775D00966A29 /* Agent.swift in Sources */,
+				0FDBC89228AAD80000966A29 /* OpenSkyApi.swift in Sources */,
+				0FDBC87728AA50F700966A29 /* FlightsRadarView.swift in Sources */,
+				0FDBC87528AA50F700966A29 /* FlightsRadarApp.swift in Sources */,
+				0FDBC89528AAE05700966A29 /* FlightsRadarViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0FDBC87D28AA50F900966A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FDBC87E28AA50F900966A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FDBC88028AA50F900966A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightsRadar/Preview Content\"";
+				DEVELOPMENT_TEAM = DZ47AJV762;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.techTask.FlightsRadar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FDBC88128AA50F900966A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightsRadar/Preview Content\"";
+				DEVELOPMENT_TEAM = DZ47AJV762;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.techTask.FlightsRadar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FDBC86C28AA50F700966A29 /* Build configuration list for PBXProject "FlightsRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FDBC87D28AA50F900966A29 /* Debug */,
+				0FDBC87E28AA50F900966A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FDBC87F28AA50F900966A29 /* Build configuration list for PBXNativeTarget "FlightsRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FDBC88028AA50F900966A29 /* Debug */,
+				0FDBC88128AA50F900966A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FDBC86928AA50F700966A29 /* Project object */;
+}
